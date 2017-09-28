@@ -604,14 +604,13 @@ img {
   position: relative;
 }
 .section3 .sectContent .contentText .textList li .listLeft {
-  width: 5.16908213rem;
+  width: 5.12077295rem;
   height: 6.11111111rem;
   position: absolute;
   top: 0rem;
   left: 0rem;
   opacity: 0;
   z-index: 9;
-  background: url(../images/section3imgbg.png) no-repeat center center / contain;
 }
 .section3 .sectContent .contentText .textList li .listLeft img {
   width: 90%;
