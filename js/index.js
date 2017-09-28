@@ -1,6 +1,7 @@
 ;(function(){
 	$(function(){
 		var jump,jump1,adddome;
+		var sec2jump,sec2jump1,sec2add;
 		;(function(){
 			// 创新产品部分切割图片电流走向
 			var imgdots = 30;	
@@ -54,7 +55,51 @@
 		})()
 		;(function(){
 			// 电流碰撞场景
-
+			var secimgdots = 20;	
+			var secimgIndex = 0;		
+			var secimgIndex1 = 0;
+			var secwidthpx = $('.leftele').width();
+			var secheightpx = $('.leftele').height();
+			var secimgSrc = 'images/electricsec01.png';
+			var secdotWidth = secwidthpx / secimgdots;	
+			var secdotHeight = secheightpx;	
+			//设置小div进行图片切割.
+			sec2add = function(){
+				secimgIndex = 0;	
+				secimgIndex1 = 0;	
+				var divBox = '';
+				for (var i = 0;i < secimgdots;i ++) {
+					divBox += '<div class="dotboxsec" style="width:'+secdotWidth+'px;height:'+secdotHeight+'px;float:left;display:inline;background-image:url('+secimgSrc+');background-repeat:no-repeat;background-size:'+secwidthpx+'px '+secheightpx+'px;background-position:'+(-i*secdotWidth)+'px '+0+'px"></div>';
+				}
+				$(".leftele").append(divBox);
+				$(".rightele").append(divBox);
+				$(".dotboxsec").css({opacity:0});
+			}
+			sec2jump = function(){
+				$(".leftele .dotboxsec:eq("+secimgIndex+")").animate({opacity:1},50,function(){
+					$(".leftele .dotboxsec:eq("+secimgIndex+")").animate({opacity:0.5},50,function(){
+					    if(secimgIndex<secimgdots-1){
+					        secimgIndex++;
+					        sec2jump();
+					    }else{
+					    	$('#pano').addClass('panoactive');
+					        $('.leftele').empty();
+					    }
+					});
+				});
+			}
+			sec2jump1 = function(){
+				$(".rightele .dotboxsec:eq("+secimgIndex1+")").animate({opacity:1},50,function(){
+					$(".rightele .dotboxsec:eq("+secimgIndex1+")").animate({opacity:0.5},50,function(){
+					    if(secimgIndex1<secimgdots-1){
+					        secimgIndex1++;
+					        sec2jump1();
+					    }else{
+					        $('.rightele').empty();
+					    }
+					});
+				});
+			}
 		})()
 		// 转换文字
 		var number = 0;
@@ -121,6 +166,9 @@
 						break;
 					case 2:
 						$('.section2 .sectContent').removeClass('activeTwo');
+						$('#pano').removeClass('panoactive');
+						$('.leftele').empty();
+						$('.rightele').empty();
 					 	break;
 					case 3:
 						$('.electrictop,.electricbott').empty();
@@ -148,6 +196,12 @@
 						break;
 					case 2:
 						$('.section2 .sectContent').addClass('activeTwo');
+						sec2add();
+						var secTime = setTimeout(function(){
+							sec2jump();
+							sec2jump1();
+							clearTimeout(secTime);
+						},2500)
 						break;
 					case 3:
 						$('.section3 .sectContent').addClass('activeThree');
@@ -195,6 +249,10 @@
 				}
 			}
 		})
+		var loadingT = setTimeout(function(){
+			clearTimeout(loadingT);
+			$('.loading').remove();
+		},0)
 	})
 })(jQuery)
 
