@@ -1,0 +1,1494 @@
+.px(@name, @px){
+	@{name}: @px / 41.4rem; 
+}
+@font-face {
+    font-family: "FZZHJW";
+    src: url("../fonts/FZZHJW.eot"); /* IE9 */
+    src: url("../fonts/FZZHJW.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../fonts/FZZHJW.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/FZZHJW.TTF") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../fonts/FZZHJW.svg#FZZHJW") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ 	-webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -moz-user-select:none;//火狐
+    -ms-user-select:none; //IE10
+     user-select:none;
+}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+body{
+	font-family: "FZZHJW Microsoft Yahei", Helvetica, Arial, sans-serif;
+  	font-weight: normal;
+}
+a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #333;
+}
+img{
+	display: block;
+	width: 100%;
+	border: none;
+}
+.musiclogo{
+	.px(width, 44);
+	.px(height, 44);
+	position: absolute;
+	.px(top, 48);
+	.px(right, 42);
+	z-index: 999;
+}
+.musicact{
+	-webkit-animation: clire1 5s linear infinite;
+			animation: clire1 5s linear infinite;
+}
+// content
+.section{
+	.fp-tableCell{
+		position:relative;
+	}
+	#bceialogo{
+		display: block;
+		.px(width, 320);
+		.px(height, 72);
+		position:absolute;
+		.px(top, 36);
+		.px(left, 34);
+		z-index: 3002;
+		background: url(../images/BCEIAlogobg.png) no-repeat center center/contain;
+	}
+	.downArrow{
+		display: block;
+		.px(width, 35);
+		.px(height, 75);
+		position: absolute;
+		.px(left, 0);
+		.px(right, 0);
+		.px(bottom, 130);
+		margin: auto;
+		z-index: 3002;
+		&>i{
+			display: block;
+			.px(width, 25);
+			.px(height, 20);
+			opacity: 0;
+			background: url(../images/downarrowbg.png) no-repeat center center/contain;
+		}
+		.down01{
+			-webkit-animation: downtop 3s linear infinite;
+					animation: downtop 3s linear infinite;
+		}
+		.down02{
+			opacity: 0.6;
+			-webkit-animation: downcen 3s linear infinite;
+					animation: downcen 3s linear infinite;
+		}
+		.down03{
+			opacity: 0.3;
+			-webkit-animation: downbott 3s linear infinite;
+					animation: downbott 3s linear infinite;
+		}
+	}
+}
+// 第一页
+.section1{
+	perspective: 500;
+	-webkit-perspective: 500; /* Safari 和 Chrome */
+	background: url(../images/BCEIAbg.jpg) no-repeat center center/100% 100%;
+	.meteorbox{
+		width: 100%;
+		height: 100%;
+		position:absolute;
+		.px(top, 0);
+		.px(left, 0);
+		.meteor{
+			display: block;
+			.px(width, 636);
+			.px(height, 636);
+			position:absolute;
+			opacity: 0.3;
+			&>img{
+				.px(width,30);
+			}
+		}
+		.meteor.top{
+			.px(top, -100);
+			.px(left, -100);
+		}
+		.meteor.bott{
+			.px(bottom, -100);
+			.px(left, -100);
+		}
+		.meteor01{
+			-webkit-animation:metor1 10s ease infinite;
+					animation:metor1 10s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor08{
+			-webkit-animation:metor8 9s ease infinite;
+					animation:metor8 9s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor09{
+			-webkit-animation:metor9 7s ease infinite;
+					animation:metor9 7s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor10{
+			-webkit-animation:metor10 8s ease infinite;
+					animation:metor10 8s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor11{
+			-webkit-animation:metor11 5s ease infinite;
+					animation:metor11 5s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor12{
+			-webkit-animation:metor12 6s 2s ease infinite;
+					animation:metor12 6s 2s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(120deg);
+						transform: rotateZ(120deg);
+			}
+		}
+		.meteor02{
+			-webkit-animation:metor2 10s ease 1s infinite;
+					animation:metor2 10s ease 1s infinite;
+			&>img{
+				-webkit-transform: rotateZ(115deg);
+						transform: rotateZ(115deg);
+			}
+		}
+		.meteor03{
+			-webkit-animation:metor3 10s ease infinite;
+					animation:metor3 10s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(50deg);
+						transform: rotateZ(50deg);
+			}
+		}
+		.meteor04{
+			-webkit-animation:metor4 6s ease infinite;
+					animation:metor4 6s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(50deg);
+						transform: rotateZ(50deg);
+			}
+		}
+		.meteor05{
+			-webkit-animation:metor5 8s ease infinite;
+					animation:metor5 8s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(100deg);
+						transform: rotateZ(100deg);
+			}
+		}
+		.meteor06{
+			-webkit-animation:metor6 8s 2s ease infinite;
+					animation:metor6 8s 2s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(100deg);
+						transform: rotateZ(100deg);
+			}
+		}
+		.meteor07{
+			-webkit-animation:metor7 6s 3s ease infinite;
+					animation:metor7 6s 3s ease infinite;
+			&>img{
+				-webkit-transform: rotateZ(60deg);
+						transform: rotateZ(60deg);
+			}
+		}
+	}
+	.textShow{
+		.px(width, 548);
+		.px(height, 482);
+		position:absolute;
+		.px(top, 280);
+		.px(left, 0);
+		.px(right, 0);
+		margin: auto;
+		.imgbox{
+			width: 100%;
+			height: 100%;
+			position:absolute;
+			.px(top, 20);
+			.px(left, -30);
+			-webkit-transform: rotateY(-20deg) translateZ(-3rem) translateY(-2rem);
+					transform: rotateY(-20deg) translateZ(-3rem) translateY(-2rem);
+			&>img{
+				position: absolute;
+				.px(top, 0);
+				.px(right, 0);
+				.px(bottom, 0);
+				.px(left, 0);
+				margin: auto;
+				opacity: 0.4;
+			}
+			#cycle1{
+				-webkit-animation: clire1 10s linear infinite;
+						animation: clire1 10s linear infinite;
+				.px(width, 400);
+			}
+			#cycle2{
+				-webkit-animation: clire2 8s linear infinite;
+						animation: clire2 8s linear infinite;
+				.px(width, 300);
+			}
+			#cycle3{
+				-webkit-animation: clire1 6s linear infinite;
+						animation: clire1 6s linear infinite;
+				.px(width, 200);
+			}
+			#cycle4{
+				-webkit-animation: clire2 4s linear infinite;
+						animation: clire2 4s linear infinite;
+				.px(width, 100);
+			}
+		}
+		.textShowimg{
+			position:absolute;
+			.px(top, 0);
+			.px(bottom, 0);
+			.px(left, 15);
+			margin:auto;
+			display: none;
+			p{
+				opacity: 0;	
+			}
+		}
+		.textShowimg1{
+			.px(width, 455);
+			.px(height, 190);
+			p{
+				.px(width, 455);
+			}
+		}
+		.textShowimg2{
+			.px(width, 461);
+			.px(height, 204);
+			p{
+				.px(width, 461);
+			}
+			.text202{
+				.px(margin-top, -25);
+			}
+		}
+		.textShowimg3{
+			.px(width, 461);
+			.px(height, 217);
+			p{
+				.px(width, 461);
+			}
+			.text302{
+				.px(margin-top, -25);
+			}
+		}
+		.textShowimg4{
+			.px(width, 451);
+			.px(height, 217);
+			p{
+				.px(width, 461);
+			}
+			.text402{
+				.px(margin-top, -15);
+			}
+			.text403{
+				.px(margin-top, -10);
+			}
+		}
+	}
+	// 动画获取
+	.active{
+		.textShowimg1{
+			-webkit-animation: opacity 1s 1.4s ease;
+					animation: opacity 1s 1.4s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+			.text101{
+				-webkit-animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text102{
+				-webkit-animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+		}
+		.textShowimg2{
+			-webkit-animation: opacity 1s 1.4s ease;
+					animation: opacity 1s 1.4s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+			.text201{
+				-webkit-animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text202{
+				-webkit-animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text203{
+				-webkit-animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+		}
+		.textShowimg3{
+			-webkit-animation: opacity 1s 1.4s ease;
+					animation: opacity 1s 1.4s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+			.text301{
+				-webkit-animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text302{
+				-webkit-animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text303{
+				-webkit-animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+		}
+		.textShowimg4{
+			-webkit-animation: textopacity 1s 1s ease infinite;
+					animation: textopacity 1s 1s ease infinite;
+			.text401{
+				-webkit-animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text402{
+				-webkit-animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .4s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+			.text403{
+				-webkit-animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+						animation: textshow .2s .8s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+				-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+			}
+		}	
+	}
+}
+// 第二页
+.section2{
+	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
+	.sectContent{
+		.px(width, 678);
+		.px(height, 948);
+		position: absolute;
+		.px(top, 226);
+		.px(left, 0);
+		.px(right, 0);
+		margin: auto;
+		background: url(../images/section2contentbg.png) no-repeat center center/contain;
+		.contentText{
+			.px(width, 613);
+			.px(height, 678);
+			position: absolute;
+			.px(top, 30);
+			.px(left, 30);
+			color: #fff;
+			text-align: left;
+			padding: 50/41.4rem 0 0 42/41.4rem;
+			box-sizing: border-box;
+			&>p{
+				.px(font-size, 28);
+				.px(margin-bottom, 10);
+				opacity: 0;
+			}
+			.texttop{
+				font-family: 'FZZHJW';
+				.px(font-size, 30);
+				.px(margin-bottom, 30);
+				.px(line-height, 45);
+			}
+			.textbottom{
+				color: #3bc4f4;
+			}
+			// 底部房间
+			.texthome{
+				width: 100%;
+				// .px(width, 379);
+				.px(height, 296);
+				position: absolute;
+				.px(left, 0);
+				.px(right, 0);
+				.px(bottom, 0);
+				margin: auto;
+				opacity: 0;
+				overflow: hidden;
+				z-index: 9;
+				#pano{
+					width: 100%;
+					height: 100%;
+				}
+				img{
+					position:relative;
+					z-index: 3;
+				}
+				&>span{
+					display: block;
+					.px(width, 30);
+					.px(height, 618);
+					position: absolute;
+					background: url(../images/lightlang.png) no-repeat center center/100% 100%;
+				}
+				.leftlight{
+					.px(top, -105);
+					.px(left, 55);
+					-webkit-transform: rotate(-34deg);
+							transform: rotate(-34deg);
+				}
+				.rightlight{
+					.px(top, -105);
+					.px(left, 300);
+					-webkit-transform: rotate(62deg);
+							transform: rotate(62deg);
+				}
+				&>i{
+					display: block;
+					.px(width, 137);
+					.px(height, 318);
+					opacity: 0.5;
+					position:absolute;
+					background: url(../images/lightbg.png) no-repeat center center/contain;
+				}
+				.behind01{
+					.px(right, 0);
+					.px(bottom, 150);
+				}
+				.behind02{
+					.px(right, 160);
+					.px(bottom, 200);
+				}
+			}
+		}
+		.light{
+			display: block;
+			.px(width, 137);
+			.px(height, 318);
+			position:absolute;
+			.px(bottom, -3);
+			opacity: 0;
+			z-index: 3;
+			-webkit-transform-origin: bottom;
+					transform-origin: bottom;
+			background: url(../images/lightbg.png) no-repeat bottom center/contain;
+		}
+		.lightone{
+			.px(left, 0);
+		}
+		.lighttwo{
+			.px(right, 0);
+		}
+	}
+	// 动画拉取
+	.activeTwo{
+		.texthome{
+			-webkit-animation: sceneshow .5s 4.5s ease;
+					animation: sceneshow .5s 4.5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.lightone{
+			-webkit-animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease 20,opacitynow 1s 4s ease;
+					animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease 20,opacitynow 1s 4s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.lighttwo{
+			-webkit-animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease 20,opacitynow 1s 4s ease;
+					animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease 20,opacitynow 1s 4s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.texttop{
+			-webkit-animation: textopacity .5s ease;
+					animation: textopacity .5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textTime{
+			-webkit-animation: textopacity .5s .5s ease;
+					animation: textopacity .5s .5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textAddress{
+			-webkit-animation: textopacity .5s .5s ease;
+					animation: textopacity .5s .5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textbottom{
+			-webkit-animation: textopacity .5s 1s ease;
+					animation: textopacity .5s 1s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+	}
+}
+// 第三页
+.section3{
+	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
+	.sectContent{
+		.px(width, 678);
+		.px(height, 1012);
+		position: absolute;
+		.px(top, 200);
+		.px(left, 0);
+		.px(right, 0);
+		margin: auto;
+		background: url(../images/section3contentbg.png) no-repeat center center/contain;
+		.contentText{
+			.px(width, 625);
+			.px(height, 784);
+			position:absolute;
+			.px(top, 10);
+			.px(left, 30);
+			&>h2{
+				color:#fff;
+				.px(height, 60);
+				.px(line-height, 60);
+				letter-spacing: 0.4rem;
+				.px(font-size, 40);
+				.px(padding-left, 40);
+			}
+			.textList{
+				.px(width, 526);
+				.px(height, 670);
+				margin: 50/41.4rem auto 0;
+				li{
+					.px(height, 280);
+					position: relative;
+					.listLeft{
+						.px(width, 214);
+						.px(height, 253);
+						position: absolute;
+						.px(top, 0);
+						.px(left, 0);
+						opacity: 0;
+						z-index: 9;
+						background: url(../images/section3imgbg.png) no-repeat center center/contain;
+						img{
+							width: 90%;
+							position:absolute;
+							.px(top, 0);
+							.px(right, 0);
+							.px(bottom, 0);
+							.px(left, 0);
+							margin: auto;
+						}
+					}
+					.listright{
+						.px(width, 270);
+						position: absolute;
+						.px(top, 0);
+						.px(right, 0);
+						color: #fff;
+						opacity: 0;
+						padding: 0.5rem 0.5rem 0 1rem;
+						box-sizing: border-box;
+						.rightText01{
+							letter-spacing: 0.1rem;
+							.px(font-size, 34);
+						}
+						.rightText02{
+							.px(font-size, 32);
+						}
+					}
+					.righttop{
+						.px(height, 142);
+						background: url(../images/section3botttext.png) no-repeat center center/contain;
+					}
+					.rightbott{
+						.px(height, 204);
+						background: url(../images/section3toptext.png) no-repeat center center/contain;
+					}
+				}
+				.listtop{
+					.px(margin-bottom, 50);
+					.electrictop{
+						.px(width, 324);
+						.px(height, 133);
+						position:absolute;
+						.px(top, 140);
+						.px(left, 255);
+						overflow: hidden;
+						img{
+							width: 7.8rem;
+							position: absolute;
+							.px(top, 0);
+							.px(left, 0);
+						}
+					}
+					.lightdot{
+						display: block;
+						.px(width, 31);
+						.px(height, 33);
+						position:absolute;
+						.px(top, 196);
+						.px(left, 240);
+						-webkit-animation: shareopacity 1s ease infinite;
+								animation: shareopacity 1s ease infinite;
+						background: url(../images/lightdot.png) no-repeat center center/contain;
+					}
+				}
+				.listbott{
+					.electricbott{
+						.px(width, 324);
+						.px(height, 133);
+						position:absolute;
+						.px(top, 200);
+						.px(left, 380);
+						overflow: hidden;
+						-webkit-transform-origin: left;
+								transform-origin: left;
+						-webkit-transform: rotateZ(180deg);
+								transform: rotateZ(180deg);
+						img{
+							width: 10.34rem;
+							position: absolute;
+							.px(top, 0);
+							.px(right, 0);
+						}
+					}
+					.lightdot{
+						display: block;
+						.px(width, 31);
+						.px(height, 33);
+						position:absolute;
+						.px(top, 242);
+						.px(right, 130);
+						-webkit-animation: shareopacity 1s ease infinite;
+								animation: shareopacity 1s ease infinite;
+						background: url(../images/lightdot.png) no-repeat center center/contain;
+					}
+				}
+			}
+		}
+	}
+	// 动画拉取
+	.activeThree{
+		.listtop .listLeft{
+			-webkit-animation: textopacity .5s ease; 
+					animation: textopacity .5s ease;
+			-webkit-animation-fill-mode: forwards; 
+					animation-fill-mode: forwards; 
+		}
+		.listtop .listright{
+			-webkit-animation: sceneshow .5s .5s ease;
+					animation: sceneshow .5s .5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.listbott .listLeft{
+			-webkit-animation: textopacity .5s 1s ease; 
+					animation: textopacity .5s 1s ease;
+			-webkit-animation-fill-mode: forwards; 
+					animation-fill-mode: forwards; 
+		}
+		.listbott .listright{
+			-webkit-animation: sceneshow .5s 1.5s ease;
+					animation: sceneshow .5s 1.5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+	}
+}
+// 第4页内容
+.section4{
+	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
+	.sectContent{
+		.px(width, 769);
+		.px(height, 1016);
+		position: absolute;
+		.px(top, 200);
+		.px(left, 0);
+		.px(right, 0);
+		margin: auto;
+		background: url(../images/section4content.png) no-repeat center center/contain;
+		.contentText{
+			.px(width, 634);
+			.px(height, 784);
+			position: absolute;
+			.px(top, 10);
+			.px(left, 74);
+			&>h2{
+				color:#fff;
+				.px(height, 60);
+				.px(line-height, 60);
+				letter-spacing: 0.4rem;
+				.px(font-size, 40);
+				.px(padding-left, 40);
+			}
+			.textList{
+				.px(width, 582);
+				position:absolute;
+				.px(top, 160);
+				.px(left, 42);
+				li{
+					width: 100%;
+					.px(height, 279);
+					position:relative;
+					opacity: 0;
+					background: url(../images/section5libg.png) no-repeat center center/contain;
+					.listlogo{
+						display: block;
+						.px(width, 108);
+						.px(height, 108);
+						position:absolute;
+						.px(top, 40);
+						.px(left, 30);
+						&>img{
+							position:absolute;
+							.px(top, 0);
+							.px(right, 0);
+							.px(bottom, 0);
+							.px(left, 0);
+							margin: auto;
+						}
+					}
+					.listright{
+						.px(width, 400);
+						.px(padding-top, 34);
+						position:absolute;
+						.px(top, 0);
+						.px(left, 154);
+						color: #fff;
+						h3,h4{
+							.px(font-size, 34);
+							.px(margin-bottom, 5);
+						}
+						p{
+							.px(font-size, 32);
+						}
+					}
+				}
+				.listtop{
+					.px(margin-bottom, 20);
+				}
+			}
+		}
+		.section4light{
+			display: block;
+			.px(width, 318);
+			.px(height, 137);
+			opacity: 0;
+			position:absolute;
+		}
+		.light4top{
+			.px(top, 390);
+			.px(left, 0);
+			-webkit-transform-origin: left;
+					transform-origin: left;
+			background: url(../images/section4leftlight.png) no-repeat center center/contain;
+		}
+		.light4bott{
+			.px(top, 100);
+			.px(right, 2);
+			-webkit-transform-origin: right;
+					transform-origin: right;
+			background: url(../images/section4rightlight.png) no-repeat center center/contain;
+		}
+	}
+	.activeFour{
+		.section4light{
+			-webkit-animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
+					animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textList .listtop{
+			-webkit-animation: sceneshow .5s .3s ease;
+					animation: sceneshow .5s .3s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textList .listbott{
+			-webkit-animation: sceneshow .5s .6s ease;
+					animation: sceneshow .5s .6s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+	}
+}
+// 第5页
+.section5{
+	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
+	.sectContent{
+		.px(width, 675);
+		.px(height, 1016);
+		position:absolute;
+		.px(top, 200);
+		.px(right, 0);
+		.px(left, 0);
+		margin: auto;
+		background: url(../images/section5content.png) no-repeat center center/contain;
+		.contentText{
+			.px(width, 634);
+			.px(height, 787);
+			position: absolute;
+			.px(left, 30);
+			.px(top, 8);
+			box-sizing: border-box;
+			.px(padding-top, 35);
+			h2,h3{
+				.px(font-size, 40);
+				.px(height, 40);
+				.px(margin-bottom, 15);
+				.px(line-height, 40);
+				color:#fff;
+				text-align: center;
+				letter-spacing: 0.4rem;
+				opacity: 0;
+			}
+			.textBtn{
+				.px(width, 334);
+				.px(height, 100);
+				.px(line-height, 100);
+				color: #fff;
+				.px(font-size, 30);
+				text-align: center;
+				margin:  50/41.4rem auto;
+				opacity: 0;
+				background: url(../images/section5btnbg.png) no-repeat center center/contain;
+			}
+			.textCode{
+				.px(width, 286);
+				.px(height, 272);
+				margin: 0 auto;
+				position: relative;
+				opacity: 0;
+				background: url(../images/section5codebg.png) no-repeat center center/contain;
+				.codeImg{
+					.px(width, 210);
+					.px(height, 210);
+					position: absolute;
+					.px(top, 0);
+					.px(right, 0);
+					.px(bottom, 0);
+					.px(left, 0);
+					margin:auto;
+					opacity: 0;
+					background: #030c14;
+					img{
+						.px(width, 185);
+						position:absolute;
+						.px(top, 0);
+						.px(right, 0);
+						.px(bottom, 0);
+						.px(left, 0);
+						margin: auto;
+					}
+				}
+				.headbg{
+					.px(width, 130);
+					.px(height, 100);
+					position: absolute;
+					.px(bottom, -84);
+					.px(left, 0);
+					.px(right, 0);
+					margin: auto;
+					.headimg{
+						display: block;
+						.px(width, 30);
+						.px(height, 52);
+						margin: 0 auto;
+						background: url(../images/section5headbg.png) no-repeat center center/contain;
+					}
+					p{
+						text-align: center;
+						.px(font-size, 32);
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.shareBtn{
+		display: block;
+		.px(width, 247);
+		.px(height, 65);
+		.px(line-height, 65);
+		position:absolute;
+		.px(left, 0);
+		.px(right, 0);
+		.px(bottom, 186);
+		.px(font-size, 32);
+		color:#fff;
+		text-align: center;
+		margin: auto;
+		-webkit-animation: shareopacity 3s ease infinite;
+				animation: shareopacity 3s ease infinite;
+		background: url(../images/sharebtn.png) no-repeat center center/contain;
+	}
+	.shareBg{
+		width: 100%;
+		height: 100%;
+		position:absolute;
+		.px(top, 0);
+		.px(left, 0);
+		z-index: 9999;
+		background: rgba(0,0,0,0.8);
+		display: none;
+		.sharelight{
+			.px(width, 122);
+			position:absolute;
+			.px(top, 0);
+			.px(right, 0);
+			-webkit-transform-origin: top;
+					transform-origin: top;
+			-webkit-animation: sharelight .1s ease infinite;
+					animation: sharelight .1s ease infinite;
+		}
+		.sharetext{
+			width: 100%;
+			.px(width, 300);
+			position:absolute;
+			.px(top, 40);
+			.px(right, 100);
+			.px(font-size, 36);
+			color: #fff;
+			text-align: right;
+		}
+	}
+	.activeFive{
+		-webkit-animation: section5z .1s .8s ease 2;
+				animation: section5z .1s .8s ease 2;
+		.contentText h2{
+			-webkit-animation: leftflw .2s .1s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+					animation: leftflw .2s .1s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.contentText h3{
+			-webkit-animation: rightflw .2s .1s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+					animation: rightflw .2s .1s cubic-bezier(0.32,-0.44, 0.74, 1.94);
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textCode{
+			-webkit-animation: scalebig .1s .8s ease;
+					animation: scalebig .1s .8s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.textBtn{
+			-webkit-animation: scalebig .1s .5s ease;
+					animation: scalebig .1s .5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.codeImg{
+			-webkit-animation: sceneshow .5s 1.5s ease;
+					animation: sceneshow .5s 1.5s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+	}
+}
+// 动画
+@-webkit-keyframes opacity{
+	from{opacity: 1;}
+	10%{opacity: 0.6;}
+	15%{opacity: 0.8;}
+	20%{opacity: 0.5;}
+	25%{opacity: 0.2;}
+	30%{opacity: 0.7;}
+	40%{opacity: 0.9;}
+	to{opacity: 0;}
+}
+@keyframes opacity{
+	from{opacity: 1;}
+	10%{opacity: 0.6;}
+	15%{opacity: 0.8;}
+	20%{opacity: 0.5;}
+	25%{opacity: 0.2;}
+	30%{opacity: 0.7;}
+	40%{opacity: 0.9;}
+	to{opacity: 0;}
+}
+@-webkit-keyframes textshow{
+	0%{
+		-webkit-transform: translate3d(-10rem,1rem,0) scale(0);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translate3d(0,0,0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes textshow{
+	0%{
+		transform: translate3d(-10rem,1rem,0) scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: translate3d(0) scale(1);
+		opacity: 1;
+	}
+}
+// 下标效果
+// 第一个下标
+@-webkit-keyframes downtop{
+	from,80%,to{opacity: 0;}
+	10%,60%{opacity: 1;}
+}
+@keyframes downtop{
+	from,80%,to{opacity: 0;}
+	10%,60%{opacity: 1;}
+}
+// 第二个下标
+@-webkit-keyframes downcen{
+	from,10%,80%,to{opacity: 0;}
+	20%,60%{opacity: .6;}
+}
+@keyframes downcen{
+	from,10%,80%,to{opacity: 0;}
+	20%,60%{opacity: .6;}
+}
+// 第三个下标
+@-webkit-keyframes downbott{
+	from,20%,80%,to{opacity: 0;}
+	30%,60%{opacity: .3;}
+}
+@keyframes downbott{
+	from,20%,80%,to{opacity: 0;}
+	30%,60%{opacity: .3;}
+}
+// 分享光芒喷射
+@-webkit-keyframes sharelight{
+	from,to{opacity: 1;-webkit-transform:scale(1);}
+	50%{opacity: 0.9;-webkit-transform:scale(0.98);}
+}
+@keyframes sharelight{
+	from,to{opacity: 1;transform:scale(1);}
+	50%{opacity: 0.9;transform:scale(0.98);}
+}
+
+// 第二页效果展示
+// 先闪动出现场景
+@-webkit-keyframes sceneshow{
+	0%{opacity: 0;}
+	5%{opacity: 0.5}
+	10%{opacity: 0.1}
+	15%{opacity: 0.6}
+	20%{opacity: 0.1}
+	30%{opacity: 0.8}
+	35%{opacity: 0.2}
+	100%{opacity: 1}
+}
+@keyframes sceneshow{
+	0%{opacity: 0;}
+	5%{opacity: 0.5}
+	10%{opacity: 0.1}
+	15%{opacity: 0.6}
+	20%{opacity: 0.1}
+	30%{opacity: 0.8}
+	35%{opacity: 0.2}
+	100%{opacity: 1}
+}
+// 光线突然出现，并且开始闪动,逐渐开始消失
+@-webkit-keyframes lightshow{
+	0%{-webkit-transform: scale(0);opacity: 0;}
+	100%{-webkit-transform: scale(1);opacity: 1;}
+}
+@keyframes lightshow{
+	0%{transform: scale(0);opacity: 0;}
+	100%{transform: scale(1);opacity: 1;}
+}
+@-webkit-keyframes lightact{
+	0%{-webkit-transform: scale(1);opacity: 1;}
+	100%{-webkit-transform: scale(0.9);opacity: 0.8;}
+}
+@keyframes lightact{
+	0%{transform: scale(1);opacity: 1;}
+	100%{transform: scale(0.9);opacity: 0.8;}
+}
+@-webkit-keyframes opacitynow{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+@keyframes opacitynow{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+// 文字浮现
+@-webkit-keyframes textopacity{
+	from{-webkit-transform: translateY(2rem);opacity: 0;}
+	to{-webkit-transform: translateY(0);opacity: 1;}
+}
+@keyframes textopacity{
+	from{transform: translateY(2rem);opacity: 0;}
+	to{transform: translateY(0);opacity: 1;}
+}
+// 第四页文字旋转出现
+// 嵌入
+@-webkit-keyframes scalebig{
+	from{
+		-webkit-transform: scale(1.2);
+		opacity: 0;
+	}
+	to{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes scalebig{
+	from{
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+// 左侧飞入
+@-webkit-keyframes leftflw{
+	from{
+		-webkit-transform: translateX(-5rem) scale(0.9);
+		opacity: 0;
+	}
+	to{
+		-webkit-transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes leftflw{
+	from{
+		transform: translateX(-5rem) scale(0.9);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes rightflw{
+	from{
+		-webkit-transform: translateX(5rem) scale(0.9);
+		opacity: 0;
+	}
+	to{
+		-webkit-transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes rightflw{
+	from{
+		transform: translateX(5rem) scale(0.9);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes section5z{
+	0%,50%,100%{-webkit-transform: translate3d(0, 0, 0);}
+	25%{-webkit-transform: translate3d(1px, 1px, 1px );}
+	75%{-webkit-transform: translate3d(-1px, -1px, -1px );}
+}
+@keyframes section5z{
+	0%,50%,100%{transform: translate3d(0, 0, 0);}
+	25%{transform: translate3d(1px, 1px, 1px );}
+	75%{transform: translate3d(-1px, -1px, -1px );}
+}
+// 分享效果
+@-webkit-keyframes shareopacity{
+	from,to{opacity: 1}
+	50%{opacity: 0.8}
+}
+@keyframes shareopacity{
+	from,to{opacity: 1}
+	50%{opacity: 0.8}
+}
+
+// 流星划过
+@-webkit-keyframes metor1{
+	from{
+		-webkit-transform: translate3d(-400px,-100px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,100px,-500px);
+	}
+}
+@keyframes metor1{
+	from{
+		transform: translate3d(-400px,-100px,500px);
+	}
+	to{
+		transform: translate3d(800px,100px,-500px);
+	}
+}
+@-webkit-keyframes metor8{
+	from{
+		-webkit-transform: translate3d(-300px,-100px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,150px,-500px);
+	}
+}
+@keyframes metor8{
+	from{
+		transform: translate3d(-300px,-100px,500px);
+	}
+	to{
+		transform: translate3d(800px,150px,-500px);
+	}
+}
+@-webkit-keyframes metor9{
+	from{
+		-webkit-transform: translate3d(-200px,0px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,150px,-500px);
+	}
+}
+@keyframes metor9{
+	from{
+		transform: translate3d(-200px,0px,500px);
+	}
+	to{
+		transform: translate3d(800px,150px,-500px);
+	}
+}
+@-webkit-keyframes metor10{
+	from{
+		-webkit-transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,250px,-500px);
+	}
+}
+@keyframes metor10{
+	from{
+		transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		transform: translate3d(800px,250px,-500px);
+	}
+}
+@-webkit-keyframes metor11{
+	from{
+		-webkit-transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(600px,150px,-500px);
+	}
+}
+@keyframes metor11{
+	from{
+		transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		transform: translate3d(600px,150px,-500px);
+	}
+}
+@-webkit-keyframes metor12{
+	from{
+		-webkit-transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(600px,150px,-500px);
+	}
+}
+@keyframes metor12{
+	from{
+		transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		transform: translate3d(600px,150px,-500px);
+	}
+}
+@-webkit-keyframes metor2{
+	from{
+		-webkit-transform: translate3d(-100px,100px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,300px,-500px);
+	}
+}
+@keyframes metor2{
+	from{
+		transform: translate3d(-100px,100px,500px);
+	}
+	to{
+		transform: translate3d(800px,300px,-500px);
+	}
+}
+@-webkit-keyframes metor3{
+	from{
+		-webkit-transform: translate3d(-100px,100px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,-100px,-500px);
+	}
+}
+@keyframes metor3{
+	from{
+		transform: translate3d(-100px,100px,500px);
+	}
+	to{
+		transform: translate3d(800px,-100px,-500px);
+	}
+}
+@-webkit-keyframes metor4{
+	from{
+		-webkit-transform: translate3d(-200px,200px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(800px,0px,-500px);
+	}
+}
+@keyframes metor4{
+	from{
+		transform: translate3d(-200px,200px,500px);
+	}
+	to{
+		transform: translate3d(800px,0px,-500px);
+	}
+}
+@-webkit-keyframes metor5{
+	from{
+		-webkit-transform: translate3d(-400px,-200px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(600px,0px,-500px);
+	}
+}
+@keyframes metor5{
+	from{
+		transform: translate3d(-400px,-200px,500px);
+	}
+	to{
+		transform: translate3d(600px,0px,-500px);
+	}
+}
+@-webkit-keyframes metor6{
+	from{
+		-webkit-transform: translate3d(-400px,-200px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(600px,0px,-500px);
+	}
+}
+@keyframes metor6{
+	from{
+		transform: translate3d(-400px,-200px,500px);
+	}
+	to{
+		transform: translate3d(600px,0px,-500px);
+	}
+}
+@-webkit-keyframes metor7{
+	from{
+		-webkit-transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		-webkit-transform: translate3d(600px,0px,-500px);
+	}
+}
+@keyframes metor7{
+	from{
+		transform: translate3d(-200px,50px,500px);
+	}
+	to{
+		transform: translate3d(600px,0px,-500px);
+	}
+}
+
+// 背景旋转
+@-webkit-keyframes clire1{
+	from{
+		-webkit-transform: rotateZ(0);
+	}
+	to{
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+@keyframes clire1{
+	from{
+		transform: rotateZ(0);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+@-webkit-keyframes clire2{
+	from{
+		-webkit-transform: rotateZ(0);
+	}
+	to{
+		-webkit-transform: rotateZ(-360deg);
+	}
+}
+@keyframes clire2{
+	from{
+		transform: rotateZ(0);
+	}
+	to{
+		transform: rotateZ(-360deg);
+	}
+}
+@-webkit-keyframes textopacity{
+	0%,20%,30%,53%,100%{opacity: 1;}
+	0%,10%,25%,40%,55%,65%,70%,90%{opacity: 0.9;}
+	0%,35%,45%,50%,75%,60%,80%,95%{opacity: 0.7;}
+}
+@keyframes textopacity{
+	0%,20%,30%,53%,100%{opacity: 1;}
+	0%,10%,25%,40%,55%,65%,70%,90%{opacity: 0.9;}
+	0%,35%,45%,50%,75%,60%,80%,95%{opacity: 0.7;}
+}

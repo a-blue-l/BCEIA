@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>BCEIA</title>
+	<link rel="stylesheet" href="css/jquery.fullpage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/krpano.js"></script>
+	<script>
+		;(function(){
+			var _width = window.innerWidth,
+				_html = document.getElementsByTagName('html')[0];
+			_html.style.fontSize = _width * .05 + 'px';
+		})()
+	</script>
+</head>
+<body>
+	<audio src="mp3/music.mp3" autoplay="auto" monitor="" loop="loop" id="audio"></audio>
+	<div class="musiclogo musicact">
+		<img src="images/musiclogo.png" />
+	</div>
+	<div id="fullpageId" class="pageContain">
+		<div class="section section1">
+			<!-- 第一页内容 -->
+			<div class="meteorbox">
+				<i class="meteor meteor01 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor08 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor09 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor10 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor11 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor12 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor13 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor02 top">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor03 bott">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor04 bott">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor05 bott">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor06 bott">
+					<img src="images/lightlang.png" />
+				</i>
+				<i class="meteor meteor07 bott">
+					<img src="images/lightlang.png" />
+				</i>
+			</div>
+			<span id="bceialogo"></span>
+			<!-- 字体显示 -->
+			<div class="textShow active">
+				<div class="imgbox">
+					<img src="images/cycle.png" id="cycle1"/>
+					<img src="images/cycle.png" id="cycle2"/>
+					<img src="images/cycle.png" id="cycle3"/>
+					<img src="images/cycle.png" id="cycle4"/>
+				</div>
+				<div class="textShowimg textShowimg1">
+					<p class="text101">
+						<img src="images/BCEIAsection1text101.png" />
+					</p>
+					<p class="text102">
+						<img src="images/BCEIAsection1text102.png" />
+					</p>
+				</div>
+				<div class="textShowimg textShowimg2">
+					<p class="text201">
+						<img src="images/BCEIAsection1text201.png" />
+					</p>
+					<p class="text202">
+						<img src="images/BCEIAsection1text202.png" />
+					</p>
+					<p class="text203">
+						<img src="images/BCEIAsection1text203.png" />
+					</p>
+				</div>
+				<div class="textShowimg textShowimg3">
+					<p class="text301">
+						<img src="images/BCEIAsection1text301.png" />
+					</p>
+					<p class="text302">
+						<img src="images/BCEIAsection1text302.png" />
+					</p>
+					<p class="text303">
+						<img src="images/BCEIAsection1text303.png" />
+					</p>
+				</div>
+				<div class="textShowimg textShowimg4">
+					<p class="text401">
+						<img src="images/BCEIAsection1text401.png" />
+					</p>
+					<p class="text402">
+						<img src="images/BCEIAsection1text402.png" />
+					</p>
+					<p class="text403">
+						<img src="images/BCEIAsection1text403.png" />
+					</p>
+				</div>
+			</div>
+			<!-- 底部下拉标识 -->
+			<span class="downArrow">
+				<i class="down01"></i>
+				<i class="down02"></i>
+				<i class="down03"></i>
+			</span>
+		</div>
+		<div class="section section2">
+			<!-- 第二页内容 -->
+			<span id="bceialogo"></span>
+			<!-- 中间内容 -->
+			<div class="sectContent">
+				<div class="contentText">
+					<p class="texttop">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赛默飞世尔科技诚挚邀请您与我们一同参加北京分析测试学术报告会暨展览会。在此，我们将竭诚等候您的到来。
+					</p>
+					<p class="textTime">时间： 10月10日至13日</p>
+					<p class="textAddress">地点： 北京国家会议中心</p>
+					<p class="textbottom">赛默飞世尔科技展台位于B展馆A5展位</p>
+					<div class="texthome">
+						<div id="pano">
+							<noscript><table style="width:100%;height:100%;"><tr style="valign:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+							<script>
+								embedpano({swf:"krpano.swf", xml:"index.xml", target:"pano", html5:"auto", passQueryParameters:true});
+							</script>
+						</div>
+						<!-- <img src="images/section2bottombg.png" />
+						<span class="leftlight"></span>
+						<span class="rightlight"></span>
+						<i class="behind01"></i>
+						<i class="behind02"></i> -->
+					</div>
+					<span class="lightone light"></span>
+					<span class="lighttwo light"></span>
+				</div>
+			</div>
+			<!-- 底部下拉标识 -->
+			<span class="downArrow">
+				<i class="down01"></i>
+				<i class="down02"></i>
+				<i class="down03"></i>
+			</span>
+		</div>
+		<div class="section section3">
+			<!-- 第三页内容 -->
+			<span id="bceialogo"></span>
+			<!-- 内容部分 -->
+			<div class="sectContent">
+				<div class="contentText">
+					<h2>创新产品</h2>
+					<ul class="textList">
+						<li class="listtop">
+							<div class="listLeft">
+								<img src="images/section5litopbg.png" />
+							</div>
+							<div class="listright righttop">
+								<p class="rightText01">SeqStudio</p>
+								<p class="rightText02">基因分析仪</p>
+							</div>
+							<span class="lightdot"></span>
+							<div class="electrictop"></div>
+						</li>
+						<li class="listbott">
+							<div class="listLeft">
+								<img src="images/section5litopbg.png" />
+							</div>
+							<div class="listright rightbott">
+								<p class="rightText01">TSQ Altis</p>
+								<p class="rightText02">三重四级杆质谱仪</p>
+							</div>
+							<span class="lightdot"></span>
+							<div class="electricbott"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 底部下拉标识 -->
+			<span class="downArrow">
+				<i class="down01"></i>
+				<i class="down02"></i>
+				<i class="down03"></i>
+			</span>
+		</div>
+		<div class="section section4">
+			<!-- 第四页内容 -->
+			<span id="bceialogo"></span>
+			<!-- 内容区域 -->
+			<div class="sectContent">
+				<div class="contentText">
+					<h2>数字体验</h2>
+					<ul class="textList">
+						<li class="listtop">
+							<span class="listlogo">
+								<img src="images/section5litopbg.png" />
+							</span>
+							<div class="listright">
+								<h3>数字化电子商务</h3>
+								<h4>平台体验区</h4>
+								<p>一分钟在线模拟下单</p>
+								<p>体验物流直达的贴心服务</p>
+							</div>
+						</li>
+						<li class="listbott">
+							<span class="listlogo">
+								<img src="images/section5libottbg.png" />
+							</span>
+							<div class="listright">
+								<h3>VR体验区</h3>
+								<p>以虚拟显示技术为您</p>
+								<p>真实展示我们的产品与服务，一切跃然眼前。</p>
+							</div>
+						</li>
+					</ul>
+					<span class="section4light light4top"></span>
+					<span class="section4light light4bott"></span>
+				</div>
+			</div>
+			<!-- 底部下拉标识 -->
+			<span class="downArrow">
+				<i class="down01"></i>
+				<i class="down02"></i>
+				<i class="down03"></i>
+			</span>
+		</div>
+		<div class="section section5">
+			<!-- 第五页内容 -->
+			<span id="bceialogo"></span>
+			<div class="sectContent">
+				<div class="contentText">
+					<h2>第一时间了解</h2>
+					<h3>更多展会信息</h3>
+					<div class="textBtn">
+						赛默飞中国官方微信
+					</div>
+					<div class="textCode">
+						<div class="codeImg">
+							<img src="images/BCEIACode.jpg" />
+						</div>
+						<div class="headbg">
+							<span class="headimg"></span>
+							<p>长按关注</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="shareBtn">转发分享</span>
+			<div class="shareBg">
+				<img src="images/sharelightbg.png" class="sharelight"/>
+				<p class="sharetext">点击光芒投射</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.1.11.3.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

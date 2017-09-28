@@ -1,0 +1,94 @@
+<krpano version="1.0.8.15" onstart="buildframes(%CURRENTXML%/3dimg/,36);">
+
+	<events onresize="updateframes()" onviewchange="updateframesscale()" />
+	
+	<style name="frame" keep="true" visible="false"
+		align="center"
+		onloaded="updateframesize(get(name));set(plugin[loadingtext].visible,false);"
+		ondown="copy(oldmousex,mouse.x);domouserotate();"
+	/>
+	<layer name="gallerynext" url="3dimg/gallerybtns.png" keep="true" 
+		align="right" x="-30" y="0" zorder="50"
+		crop="100|0|100|100"
+		onovercrop="100|100|100|100"
+		ondowncrop="100|100|100|100"
+		ondown="set(y,1);dorotate();"
+		onup="set(y,0)"
+		direction="-1"
+	/>
+	
+	<layer name="galleryprev" url="3dimg/gallerybtns.png" keep="true" 
+		align="left" x="-30" y="0" zorder="50"
+		crop="0|0|100|100"
+		onovercrop="0|100|100|100"
+		ondowncrop="0|100|100|100"
+		ondown="set(y,1);dorotate();"
+		onup="set(y,0)"
+		direction="1"
+	/>	
+	<action name="buildframes">
+		for(set(i,0), i LT %2, inc(i),
+			txtadd(fname,frame,get(i));
+			txtadd(furl,%1,get(i),.jpg);
+			addplugin(get(fname));
+			plugin[get(fname)].loadstyle(frame);
+			copy(plugin[get(fname)].url,furl);
+		);
+		set(currentframe,0);
+		set(framecount,%2);
+		set(oldmousex,0);
+		showframe(0);
+	</action>
+	
+	<action name="showframe">
+		txtadd(fname,frame,get(currentframe));
+		txtadd(tempstr,'set(plugin[',get(fname),'].visible,false);');
+		ifnot(%1 == 0, delayedcall(0.03,get(tempstr)); );
+		add(currentframe,%1);
+		if(currentframe LT 0, sub(currentframe,framecount,1); );
+		if(currentframe == framecount, set(currentframe,0); );
+		txtadd(fname,frame,get(currentframe));
+		set(plugin[get(fname)].visible,true);
+		ifnot(plugin[get(fname)].loaded, set(plugin[loadingtext].visible,true);, set(plugin[loadingtext].visible,false); );
+	</action>
+	<!-- 自适应 -->
+	<action name="updateframesize">
+		if(plugin[%1].imagewidth GT stagewidth,
+			set(plugin[%1].width,80%);
+			set(plugin[%1].height,prop);
+		,
+			if(plugin[%1].imageheight GT stageheight,
+				set(plugin[%1].width,prop);
+				set(plugin[%1].height,70%);
+			,
+				plugin[%1].resetsize();
+			);
+		);
+	</action>
+	
+	<action name="updateframesscale">
+		for(set(i,0), i LT framecount, inc(i),
+			txtadd(fname,frame,get(i));
+			sub(temp,180,view.fov);
+			div(newscale,temp,70);
+			copy(plugin[get(fname)].scale,newscale);
+		);	
+	</action>
+	<action name="dorotate">
+		if(pressed,
+			showframe(get(direction));
+			delayedcall(0.05,dorotate(););
+		);
+	</action>
+<!-- 旋转 -->
+	<action name="domouserotate">
+		if(pressed,
+			sub(temp,oldmousex,mouse.x);
+			if(temp GT 0, set(temp,1); );
+			if(temp LT 0, set(temp,-1); );
+			showframe(get(temp));
+			copy(oldmousex,mouse.x);
+			delayedcall(0.03,domouserotate(););
+		);
+	</action>
+</krpano>
