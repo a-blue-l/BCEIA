@@ -2,6 +2,7 @@
 	$(function(){
 		var jump,jump1,adddome;
 		var sec2jump,sec2jump1,sec2add;
+		var falgtwo = false;
 		;(function(){
 			// 创新产品部分切割图片电流走向
 			var imgdots = 30;	
@@ -61,7 +62,7 @@
 			var secwidthpx = $('.leftele').width();
 			var secheightpx = $('.leftele').height();
 			var secimgSrc = 'images/electricsec01.png';
-			var secdotWidth = secwidthpx / secimgdots;	
+			var secdotWidth = (secwidthpx-0.2) / secimgdots;	
 			var secdotHeight = secheightpx;	
 			//设置小div进行图片切割.
 			sec2add = function(){
@@ -157,7 +158,7 @@
 			onLeave: function(index, nextIndex, direction){
 				//console.log(index);//从该页码进入当前页
 				//console.log(nextIndex);//当前页数字标识
-				//console.log(direction);//通过什么方式进入，上/下
+				// console.log(direction);//通过什么方式进入，上/下
 				switch (index) {
 					case 1:
 						number = 0
@@ -165,23 +166,31 @@
 						clearInterval(sectionT);
 						break;
 					case 2:
+						if(!falgtwo && direction == 'down'){
+							return false;
+						}
 						$('.section2 .sectContent').removeClass('activeTwo');
+						$('.figersuo').hide();
+						falgtwo = false;
+						break;
+					case 3:
+						$('.section3 .sectContent').removeClass('activeThree');
 						$('#pano').removeClass('panoactive');
 						$('.leftele').empty();
 						$('.rightele').empty();
 					 	break;
-					case 3:
-						$('.electrictop,.electricbott').empty();
-						$('.section3 .sectContent').removeClass('activeThree');
-					 	break;
 					case 4:
+						$('.electrictop,.electricbott').empty();
 						$('.section4 .sectContent').removeClass('activeFour');
 					 	break;
 					case 5:
 						$('.section5 .sectContent').removeClass('activeFive');
 					 	break;
+					case 6:
+						$('.section6 .sectContent').removeClass('activeSix');
+					 	break;
 					default:
-						console.log(22);
+						console.log('********');
 						break;
 				}
 			},
@@ -196,6 +205,10 @@
 						break;
 					case 2:
 						$('.section2 .sectContent').addClass('activeTwo');
+						$('.figerborder').show();
+						break;
+					case 3:
+						$('.section3 .sectContent').addClass('activeThree');
 						sec2add();
 						var secTime = setTimeout(function(){
 							sec2jump();
@@ -203,32 +216,41 @@
 							clearTimeout(secTime);
 						},2500)
 						break;
-					case 3:
-						$('.section3 .sectContent').addClass('activeThree');
+					case 4:
+						$('.section4 .sectContent').addClass('activeFour');
 						adddome();
 						var timeOne = setTimeout(function(){
 							Jump();
 							clearTimeout(timeOne);
 						},1000)
 						var timeTwo = setTimeout(function(){
-							Jump1();
+							Jump1(); 
 							clearTimeout(timeTwo);
 						},2000)
-						break;
-					case 4:
-						$('.section4 .sectContent').addClass('activeFour');
 						break;
 					case 5:
 						$('.section5 .sectContent').addClass('activeFive');
 						break;
+					case 6:
+						$('.section6 .sectContent').addClass('activeSix');
+						break;
 					default:
-						console.log(2);
+						console.log('**'+22);
 						break;
 				}
 			},
 			afterRender: function(){},//页面结构生成后触发的,初始化其他插件等
 			afterResize: function(){},//浏览器窗口大小后触发
 		});
+		$('.figerimg').on('click',function(){
+			$('.figerborder').hide();
+			$('.figersuo').show();
+			var Ttwodown = setTimeout(function(){
+				falgtwo = true;
+				$.fn.fullpage.moveSectionDown();
+				clearTimeout(Ttwodown);
+			},1500)
+		})
 		$('.shareBtn').click(function(){
 			$('.shareBg').show();
 		})
@@ -241,13 +263,17 @@
 			var audio = document.getElementById('audio');
 			if (audio !== null) {
 				if (audio.paused) {
-					$('.musiclogo').addClass('musicact');
+					$('.musiclogo').addClass('musicact').find('img').attr('src','images/musiclogo.png');
 					audio.play();
 				} else {
-					$('.musiclogo').removeClass('musicact');
+					$('.musiclogo').removeClass('musicact').find('img').attr('src','images/musiclogono.png');
 					audio.pause()
 				}
 			}
+		})
+		// 移除长按事件
+		$(document).bind('contextmenu', function(e) {
+		  e.preventDefault();
 		})
 		var loadingT = setTimeout(function(){
 			clearTimeout(loadingT);

@@ -50,12 +50,21 @@ img{
 	background: #fff;
 }
 .musiclogo{
-	.px(width, 44);
-	.px(height, 44);
+	.px(width,88);
+	.px(height, 88);
 	position: absolute;
-	.px(top, 48);
-	.px(right, 42);
-	z-index: 999;
+	.px(top, 24);
+	.px(right, 21);
+	z-index: 998;
+	&>img{
+		.px(width, 44);
+		position:absolute;
+		.px(top, 0);
+		.px(right, 0);
+		.px(bottom, 0);
+		.px(left, 0);
+		margin: auto;
+	}
 }
 .musicact{
 	-webkit-animation: clire1 5s linear infinite;
@@ -63,6 +72,7 @@ img{
 }
 // content
 .section{
+	background-color: #000;
 	.fp-tableCell{
 		position:relative;
 	}
@@ -429,6 +439,144 @@ img{
 .section2{
 	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
 	.sectContent{
+		.px(width, 680);
+		.px(height, 1088);
+		position: absolute;
+		.px(top, 240);
+		.px(left, 0);
+		.px(right, 0);
+		margin: auto;
+		.figerh2{
+			.px(width, 600);
+			.px(height, 245);
+			opacity: 0;
+			margin: 0 auto 1.5rem;
+		}
+		.figerbgbor{
+			.px(width, 680);
+			.px(height, 820);
+			position:relative;
+			opacity: 0;
+			background: url(../images/sectfigerbg.png) no-repeat center center/contain;
+			.figercontent{
+				.px(width, 630);
+				.px(height, 457);
+				position: absolute;
+				.px(top, 12);
+				.px(left, 30);
+				.figerborder{
+					.px(width, 287);
+					.px(height, 357);
+					position:absolute;
+					.px(top, 0);
+					.px(right, 0);
+					.px(bottom, 0);
+					.px(left, 0);
+					margin:auto;
+					background: url(../images/fingertextbg.png) no-repeat center center/contain;
+					.figerimg{
+						.px(width, 219);
+						.px(height, 213);
+						position:absolute;
+						.px(top, 30);
+						.px(left, 34);
+						margin: auto;
+						opacity: 0;
+						background: url(../images/fingerprint.png) no-repeat center center/contain;
+					}
+				}
+			}
+			.figersuo{
+				.px(width, 357);
+				.px(height, 357);
+				position:absolute;
+				.px(top, 0);
+				.px(right, 0);
+				.px(bottom, 0);
+				.px(left, 0);
+				margin:auto;
+				display: none;
+				.suobox{
+					.px(width, 357);
+					.px(height, 357);
+					position:absolute;
+					.px(top, 0);
+					.px(right, 0);
+					.px(bottom, 0);
+					.px(left, 0);
+					margin: auto;
+					&>span{
+						display: block;
+						position:absolute;
+						.px(top, 0);
+						.px(right, 0);
+						.px(left, 0);
+						.px(bottom, 0);
+						margin: auto;
+						opacity: 0.5;
+						background: url(../images/cycle.png) no-repeat center center/contain; 
+					}
+					.suo01{
+						.px(width, 357);
+						-webkit-animation: clire1 .3s .3s ease 3;
+								animation: clire1 .3s .3s ease 3;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+					.suo02{
+						.px(width, 280);
+						-webkit-animation: clire2 .3s .4s ease 3;
+								animation: clire2 .3s .4s ease 3;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+					.suo03{
+						.px(width, 230);
+						-webkit-animation: clire1 .3s .5s ease 3;
+								animation: clire1 .3s .5s ease 3;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+					.suo04{
+						.px(width, 180);
+						-webkit-animation: clire2 .3s .6s ease 3;
+								animation: clire2 .3s .6s ease 3;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+					.suo05{
+						.px(width, 200);
+						-webkit-animation: clire2 .3s .6s ease 3;
+								animation: clire2 .3s .6s ease 3;
+						-webkit-animation-fill-mode: forwards;
+								animation-fill-mode: forwards;
+					}
+				}
+			}
+		}
+	}
+	.activeTwo{
+		.figerh2{
+			-webkit-animation: figertop .2s .3s cubic-bezier(0.32,-0.44, 0.74, 1.94),figerup .2s .6s ease;
+					animation: figertop .2s .3s cubic-bezier(0.32,-0.44, 0.74, 1.94),figerup .2s .6s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.figerbgbor{
+			-webkit-animation: sceneshow .4s 1s ease;
+					animation: sceneshow .4s 1s ease;
+			-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+		}
+		.figerimg{
+			-webkit-animation: sceneshow .5s 1.7s ease,shareopacity 2s 2.1s linear infinite;
+					animation: sceneshow .5s 1.7s ease,shareopacity 2s 2.1s linear infinite;
+		}
+	}
+}
+.section3{
+	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
+	.sectContent{
 		.px(width, 793);
 		.px(height, 1088);
 		position: absolute;
@@ -495,11 +643,11 @@ img{
 				.px(height, 400);
 				position: absolute;
 				.px(left, 0);
-				.px(right, 0);
 				.px(bottom, 0);
 				margin: auto;
 				overflow: hidden;
 				z-index: 9;
+				background: #000;
 				#pano{
 					width: 100%;
 					height: 100%;
@@ -578,7 +726,7 @@ img{
 		}
 	}
 	// 动画拉取
-	.activeTwo{
+	.activeThree{
 		.lightright{
 			-webkit-animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease infinite;
 					animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease infinite;
@@ -611,8 +759,8 @@ img{
 		}
 	}
 }
-// 第三页
-.section3{
+// 第四页
+.section4{
 	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
 	.sectContent{
 		.px(width, 678);
@@ -751,7 +899,7 @@ img{
 		}
 	}
 	// 动画拉取
-	.activeThree{
+	.activeFour{
 		.listtop .listLeft{
 			-webkit-animation: textopacity .5s ease; 
 					animation: textopacity .5s ease;
@@ -778,8 +926,8 @@ img{
 		}
 	}
 }
-// 第4页内容
-.section4{
+// 第五页内容
+.section5{
 	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
 	.sectContent{
 		.px(width, 769);
@@ -874,7 +1022,7 @@ img{
 			background: url(../images/section4rightlight.png) no-repeat center center/contain;
 		}
 	}
-	.activeFour{
+	.activeFive{
 		.section4light{
 			-webkit-animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
 					animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
@@ -895,8 +1043,8 @@ img{
 		}
 	}
 }
-// 第5页
-.section5{
+// 第六页
+.section6{
 	background: url(../images/BCEIAbgtwo.jpg) no-repeat center center/100% 100%;
 	.sectContent{
 		.px(width, 675);
@@ -914,17 +1062,19 @@ img{
 			.px(left, 30);
 			.px(top, 8);
 			box-sizing: border-box;
-			.px(padding-top, 35);
+			.px(padding-top, 60);
 			h2,h3{
-				.px(font-size, 40);
 				.px(height, 40);
 				.px(margin-bottom, 15);
 				.px(line-height, 40);
 				color:#fff;
 				text-align: center;
-				letter-spacing: 0.4rem;
 				opacity: 0;
 			}
+			h2{
+				.px(font-size, 40);}
+			h3{
+				.px(font-size, 32);}
 			.textBtn{
 				.px(width, 334);
 				.px(height, 100);
@@ -1005,37 +1155,7 @@ img{
 				animation: shareopacity 3s ease infinite;
 		background: url(../images/sharebtn.png) no-repeat center center/contain;
 	}
-	.shareBg{
-		width: 100%;
-		height: 100%;
-		position:absolute;
-		.px(top, 0);
-		.px(left, 0);
-		z-index: 9999;
-		background: rgba(0,0,0,0.8);
-		display: none;
-		.sharelight{
-			.px(width, 122);
-			position:absolute;
-			.px(top, 0);
-			.px(right, 0);
-			-webkit-transform-origin: top;
-					transform-origin: top;
-			-webkit-animation: sharelight .1s ease infinite;
-					animation: sharelight .1s ease infinite;
-		}
-		.sharetext{
-			width: 100%;
-			.px(width, 300);
-			position:absolute;
-			.px(top, 40);
-			.px(right, 100);
-			.px(font-size, 36);
-			color: #fff;
-			text-align: right;
-		}
-	}
-	.activeFive{
+	.activeSix{
 		-webkit-animation: section5z .1s .8s ease 2;
 				animation: section5z .1s .8s ease 2;
 		.contentText h2{
@@ -1068,6 +1188,36 @@ img{
 			-webkit-animation-fill-mode: forwards;
 					animation-fill-mode: forwards;
 		}
+	}
+}
+.shareBg{
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	.px(top, 0);
+	.px(left, 0);
+	z-index: 999;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	.sharelight{
+		.px(width, 122);
+		position:absolute;
+		.px(top, 0);
+		.px(right, 0);
+		-webkit-transform-origin: top;
+				transform-origin: top;
+		-webkit-animation: sharelight .1s ease infinite;
+				animation: sharelight .1s ease infinite;
+	}
+	.sharetext{
+		width: 100%;
+		.px(width, 300);
+		position:absolute;
+		.px(top, 40);
+		.px(right, 100);
+		.px(font-size, 36);
+		color: #fff;
+		text-align: right;
 	}
 }
 // 动画
@@ -1270,13 +1420,13 @@ img{
 }
 @-webkit-keyframes section5z{
 	0%,50%,100%{-webkit-transform: translate3d(0, 0, 0);}
-	25%{-webkit-transform: translate3d(1px, 1px, 1px );}
-	75%{-webkit-transform: translate3d(-1px, -1px, -1px );}
+	25%{-webkit-transform: translate3d(0.05rem, 0.05rem, 0 );}
+	75%{-webkit-transform: translate3d(-0.05rem, -0.05rem, 0 );}
 }
 @keyframes section5z{
 	0%,50%,100%{transform: translate3d(0, 0, 0);}
-	25%{transform: translate3d(1px, 1px, 1px );}
-	75%{transform: translate3d(-1px, -1px, -1px );}
+	25%{transform: translate3d(0.05rem, 0.05rem, 0 );}
+	75%{transform: translate3d(-0.05rem, -0.05rem, 0 );}
 }
 // 分享效果
 @-webkit-keyframes shareopacity{
@@ -1553,5 +1703,44 @@ img{
 	to{
 		transform: scale(1);
 		opacity: 1;
+	}
+}
+
+
+// 指纹弹出效果
+@-webkit-keyframes figertop{
+	0%{
+		-webkit-transform: translate3d(-10rem,7rem,0) scale(0);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translate3d(0,7rem,0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes figertop{
+	0%{
+		transform: translate3d(-10rem,7rem,0) scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: translate3d(0,7rem,0) scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes figerup{
+	0%{
+		-webkit-transform: translate3d(0,7rem,0) scale(0.9,1.2);
+	}
+	100%{
+		-webkit-transform: translate3d(0,0,0) scale(1);
+	}
+}
+@keyframes figerup{
+	0%{
+		transform: translate3d(0,7rem,0) scale(0.9,1.2);
+	}
+	100%{
+		transform: translate3d(0,0,0) scale(1);
 	}
 }

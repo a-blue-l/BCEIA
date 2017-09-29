@@ -51,16 +51,28 @@ img {
   background: #fff;
 }
 .musiclogo {
-  width: 1.06280193rem;
-  height: 1.06280193rem;
+  width: 2.12560386rem;
+  height: 2.12560386rem;
   position: absolute;
-  top: 1.15942029rem;
-  right: 1.01449275rem;
-  z-index: 999;
+  top: 0.57971014rem;
+  right: 0.50724638rem;
+  z-index: 998;
+}
+.musiclogo > img {
+  width: 1.06280193rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  margin: auto;
 }
 .musicact {
   -webkit-animation: clire1 5s linear infinite;
   animation: clire1 5s linear infinite;
+}
+.section {
+  background-color: #000;
 }
 .section .fp-tableCell {
   position: relative;
@@ -424,6 +436,142 @@ img {
   background: url(../images/BCEIAbgtwo.jpg) no-repeat center center / 100% 100%;
 }
 .section2 .sectContent {
+  width: 16.42512077rem;
+  height: 26.28019324rem;
+  position: absolute;
+  top: 5.79710145rem;
+  left: 0rem;
+  right: 0rem;
+  margin: auto;
+}
+.section2 .sectContent .figerh2 {
+  width: 14.49275362rem;
+  height: 5.9178744rem;
+  opacity: 0;
+  margin: 0 auto 1.5rem;
+}
+.section2 .sectContent .figerbgbor {
+  width: 16.42512077rem;
+  height: 19.80676329rem;
+  position: relative;
+  opacity: 0;
+  background: url(../images/sectfigerbg.png) no-repeat center center / contain;
+}
+.section2 .sectContent .figerbgbor .figercontent {
+  width: 15.2173913rem;
+  height: 11.03864734rem;
+  position: absolute;
+  top: 0.28985507rem;
+  left: 0.72463768rem;
+}
+.section2 .sectContent .figerbgbor .figercontent .figerborder {
+  width: 6.93236715rem;
+  height: 8.62318841rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  margin: auto;
+  background: url(../images/fingertextbg.png) no-repeat center center / contain;
+}
+.section2 .sectContent .figerbgbor .figercontent .figerborder .figerimg {
+  width: 5.28985507rem;
+  height: 5.14492754rem;
+  position: absolute;
+  top: 0.72463768rem;
+  left: 0.82125604rem;
+  margin: auto;
+  opacity: 0;
+  background: url(../images/fingerprint.png) no-repeat center center / contain;
+}
+.section2 .sectContent .figerbgbor .figersuo {
+  width: 8.62318841rem;
+  height: 8.62318841rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  margin: auto;
+  display: none;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox {
+  width: 8.62318841rem;
+  height: 8.62318841rem;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  margin: auto;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox > span {
+  display: block;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  bottom: 0rem;
+  margin: auto;
+  opacity: 0.5;
+  background: url(../images/cycle.png) no-repeat center center / contain;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox .suo01 {
+  width: 8.62318841rem;
+  -webkit-animation: clire1 .3s .3s ease 3;
+  animation: clire1 .3s .3s ease 3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox .suo02 {
+  width: 6.76328502rem;
+  -webkit-animation: clire2 .3s .4s ease 3;
+  animation: clire2 .3s .4s ease 3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox .suo03 {
+  width: 5.55555556rem;
+  -webkit-animation: clire1 .3s .5s ease 3;
+  animation: clire1 .3s .5s ease 3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox .suo04 {
+  width: 4.34782609rem;
+  -webkit-animation: clire2 .3s .6s ease 3;
+  animation: clire2 .3s .6s ease 3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .sectContent .figerbgbor .figersuo .suobox .suo05 {
+  width: 4.83091787rem;
+  -webkit-animation: clire2 .3s .6s ease 3;
+  animation: clire2 .3s .6s ease 3;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .activeTwo .figerh2 {
+  -webkit-animation: figertop 0.2s 0.3s cubic-bezier(0.32, -0.44, 0.74, 1.94), figerup 0.2s 0.6s ease;
+  animation: figertop 0.2s 0.3s cubic-bezier(0.32, -0.44, 0.74, 1.94), figerup 0.2s 0.6s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .activeTwo .figerbgbor {
+  -webkit-animation: sceneshow .4s 1s ease;
+  animation: sceneshow .4s 1s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section2 .activeTwo .figerimg {
+  -webkit-animation: sceneshow .5s 1.7s ease,shareopacity 2s 2.1s linear infinite;
+  animation: sceneshow .5s 1.7s ease,shareopacity 2s 2.1s linear infinite;
+}
+.section3 {
+  background: url(../images/BCEIAbgtwo.jpg) no-repeat center center / 100% 100%;
+}
+.section3 .sectContent {
   width: 19.15458937rem;
   height: 26.28019324rem;
   position: absolute;
@@ -433,7 +581,7 @@ img {
   margin: auto;
   background: url(../images/section2contentbg.png) no-repeat center center / contain;
 }
-.section2 .sectContent .contentText {
+.section3 .sectContent .contentText {
   width: 18.35748792rem;
   height: 18.69565217rem;
   position: absolute;
@@ -444,27 +592,27 @@ img {
   padding: 0.96618357rem 0 0 1.352657rem;
   box-sizing: border-box;
 }
-.section2 .sectContent .contentText .secentext {
+.section3 .sectContent .contentText .secentext {
   width: 10.57971014rem;
   height: 1.23188406rem;
   margin-left: -0.82125604rem;
   margin-bottom: 0.72463768rem;
   opacity: 0;
 }
-.section2 .sectContent .contentText > p {
+.section3 .sectContent .contentText > p {
   font-size: 0.6763285rem;
   margin-bottom: 0.24154589rem;
   opacity: 0;
   z-index: 8;
 }
-.section2 .sectContent .contentText .texttop {
+.section3 .sectContent .contentText .texttop {
   font-family: 'FZZHJW';
   font-size: 0.77294686rem;
   margin-bottom: 0.48309179rem;
   line-height: 1.08695652rem;
   font-weight: 700;
 }
-.section2 .sectContent .contentText .lightright {
+.section3 .sectContent .contentText .lightright {
   display: block;
   width: 7.65700483rem;
   height: 3.04347826rem;
@@ -476,7 +624,7 @@ img {
   opacity: 0;
   background: url(../images/section4rightlight.png) no-repeat center center / contain;
 }
-.section2 .sectContent .contentText .lightsix {
+.section3 .sectContent .contentText .lightsix {
   display: block;
   width: 8.26086957rem;
   height: 3.84057971rem;
@@ -486,54 +634,54 @@ img {
   opacity: 0;
   background: url(../images/sixsec2bg.jpg) no-repeat center center / contain;
 }
-.section2 .sectContent .contentText .texthome {
+.section3 .sectContent .contentText .texthome {
   width: 17.9468599rem;
   height: 9.66183575rem;
   position: absolute;
   left: 0rem;
-  right: 0rem;
   bottom: 0rem;
   margin: auto;
   overflow: hidden;
   z-index: 9;
+  background: #000;
 }
-.section2 .sectContent .contentText .texthome #pano {
+.section3 .sectContent .contentText .texthome #pano {
   width: 100%;
   height: 100%;
   opacity: 0;
   z-index: 9;
   position: relative;
 }
-.section2 .sectContent .contentText .texthome .panoactive {
+.section3 .sectContent .contentText .texthome .panoactive {
   -webkit-animation: tahn .2s linear;
   animation: tahn .2s linear;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section2 .sectContent .contentText .texthome img {
+.section3 .sectContent .contentText .texthome img {
   position: relative;
   z-index: 3;
 }
-.section2 .sectContent .contentText .texthome > span {
+.section3 .sectContent .contentText .texthome > span {
   display: block;
   width: 0.72463768rem;
   height: 14.92753623rem;
   position: absolute;
   background: url(../images/lightlang.png) no-repeat center center / 100% 100%;
 }
-.section2 .sectContent .contentText .texthome .leftlight {
+.section3 .sectContent .contentText .texthome .leftlight {
   top: -2.53623188rem;
   left: 1.32850242rem;
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
 }
-.section2 .sectContent .contentText .texthome .rightlight {
+.section3 .sectContent .contentText .texthome .rightlight {
   top: -2.53623188rem;
   left: 7.24637681rem;
   -webkit-transform: rotate(62deg);
   transform: rotate(62deg);
 }
-.section2 .sectContent .contentText .texthome > i {
+.section3 .sectContent .contentText .texthome > i {
   display: block;
   width: 3.30917874rem;
   height: 7.68115942rem;
@@ -541,15 +689,15 @@ img {
   position: absolute;
   background: url(../images/lightbg.png) no-repeat center center / contain;
 }
-.section2 .sectContent .contentText .texthome .behind01 {
+.section3 .sectContent .contentText .texthome .behind01 {
   right: 0rem;
   bottom: 3.62318841rem;
 }
-.section2 .sectContent .contentText .texthome .behind02 {
+.section3 .sectContent .contentText .texthome .behind02 {
   right: 3.8647343rem;
   bottom: 4.83091787rem;
 }
-.section2 .sectContent .contentText .lightelec {
+.section3 .sectContent .contentText .lightelec {
   width: 15.65217391rem;
   height: 3.21256039rem;
   position: absolute;
@@ -559,54 +707,54 @@ img {
   left: 0rem;
   margin: auto;
 }
-.section2 .sectContent .contentText .lightelec .leftele {
+.section3 .sectContent .contentText .lightelec .leftele {
   width: 50%;
   height: 100%;
   float: left;
 }
-.section2 .sectContent .contentText .lightelec .rightele {
+.section3 .sectContent .contentText .lightelec .rightele {
   width: 50%;
   height: 100%;
   float: left;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-.section2 .activeTwo .lightright {
+.section3 .activeThree .lightright {
   -webkit-animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease infinite;
   animation: lightshow .3s 1.5s ease,lightact .1s 1.9s ease infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section2 .activeTwo .texttop {
+.section3 .activeThree .texttop {
   -webkit-animation: rightflw .5s .3s ease;
   animation: rightflw .5s .3s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section2 .activeTwo .textTime,
-.section2 .activeTwo .textAddress,
-.section2 .activeTwo .textbottom {
+.section3 .activeThree .textTime,
+.section3 .activeThree .textAddress,
+.section3 .activeThree .textbottom {
   -webkit-animation: leftflw .5s .5s ease;
   animation: leftflw .5s .5s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section2 .activeTwo .lightsix {
+.section3 .activeThree .lightsix {
   -webkit-animation: sceneshow .3s 5s ease;
   animation: sceneshow .3s 5s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section2 .activeTwo .secentext {
+.section3 .activeThree .secentext {
   -webkit-animation: leftflw .2s .1s ease;
   animation: leftflw .2s .1s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section3 {
+.section4 {
   background: url(../images/BCEIAbgtwo.jpg) no-repeat center center / 100% 100%;
 }
-.section3 .sectContent {
+.section4 .sectContent {
   width: 16.37681159rem;
   height: 24.44444444rem;
   position: absolute;
@@ -616,14 +764,14 @@ img {
   margin: auto;
   background: url(../images/section3contentbg.png) no-repeat center center / contain;
 }
-.section3 .sectContent .contentText {
+.section4 .sectContent .contentText {
   width: 15.09661836rem;
   height: 18.93719807rem;
   position: absolute;
   top: 0.24154589rem;
   left: 0.72463768rem;
 }
-.section3 .sectContent .contentText > h2 {
+.section4 .sectContent .contentText > h2 {
   color: #fff;
   height: 1.44927536rem;
   line-height: 1.44927536rem;
@@ -631,16 +779,16 @@ img {
   font-size: 0.96618357rem;
   padding-left: 0.96618357rem;
 }
-.section3 .sectContent .contentText .textList {
+.section4 .sectContent .contentText .textList {
   width: 12.70531401rem;
   height: 16.18357488rem;
   margin: 1.20772947rem auto 0;
 }
-.section3 .sectContent .contentText .textList li {
+.section4 .sectContent .contentText .textList li {
   height: 6.76328502rem;
   position: relative;
 }
-.section3 .sectContent .contentText .textList li .listLeft {
+.section4 .sectContent .contentText .textList li .listLeft {
   width: 5.12077295rem;
   height: 6.11111111rem;
   position: absolute;
@@ -649,7 +797,7 @@ img {
   opacity: 0;
   z-index: 9;
 }
-.section3 .sectContent .contentText .textList li .listLeft img {
+.section4 .sectContent .contentText .textList li .listLeft img {
   width: 90%;
   position: absolute;
   top: 0rem;
@@ -658,7 +806,7 @@ img {
   left: 0rem;
   margin: auto;
 }
-.section3 .sectContent .contentText .textList li .listright {
+.section4 .sectContent .contentText .textList li .listright {
   width: 6.52173913rem;
   position: absolute;
   top: 0rem;
@@ -668,25 +816,25 @@ img {
   padding: 0.5rem 0.5rem 0 1rem;
   box-sizing: border-box;
 }
-.section3 .sectContent .contentText .textList li .listright .rightText01 {
+.section4 .sectContent .contentText .textList li .listright .rightText01 {
   letter-spacing: 0.1rem;
   font-size: 0.82125604rem;
 }
-.section3 .sectContent .contentText .textList li .listright .rightText02 {
+.section4 .sectContent .contentText .textList li .listright .rightText02 {
   font-size: 0.77294686rem;
 }
-.section3 .sectContent .contentText .textList li .righttop {
+.section4 .sectContent .contentText .textList li .righttop {
   height: 3.42995169rem;
   background: url(../images/section3botttext.png) no-repeat center center / contain;
 }
-.section3 .sectContent .contentText .textList li .rightbott {
+.section4 .sectContent .contentText .textList li .rightbott {
   height: 4.92753623rem;
   background: url(../images/section3toptext.png) no-repeat center center / contain;
 }
-.section3 .sectContent .contentText .textList .listtop {
+.section4 .sectContent .contentText .textList .listtop {
   margin-bottom: 1.20772947rem;
 }
-.section3 .sectContent .contentText .textList .listtop .electrictop {
+.section4 .sectContent .contentText .textList .listtop .electrictop {
   width: 7.82608696rem;
   height: 3.21256039rem;
   position: absolute;
@@ -694,13 +842,13 @@ img {
   left: 6.15942029rem;
   overflow: hidden;
 }
-.section3 .sectContent .contentText .textList .listtop .electrictop img {
+.section4 .sectContent .contentText .textList .listtop .electrictop img {
   width: 7.8rem;
   position: absolute;
   top: 0rem;
   left: 0rem;
 }
-.section3 .sectContent .contentText .textList .listtop .lightdot {
+.section4 .sectContent .contentText .textList .listtop .lightdot {
   display: block;
   width: 0.74879227rem;
   height: 0.79710145rem;
@@ -711,7 +859,7 @@ img {
   animation: shareopacity 1s ease infinite;
   background: url(../images/lightdot.png) no-repeat center center / contain;
 }
-.section3 .sectContent .contentText .textList .listbott .electricbott {
+.section4 .sectContent .contentText .textList .listbott .electricbott {
   width: 7.82608696rem;
   height: 3.21256039rem;
   position: absolute;
@@ -723,13 +871,13 @@ img {
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
 }
-.section3 .sectContent .contentText .textList .listbott .electricbott img {
+.section4 .sectContent .contentText .textList .listbott .electricbott img {
   width: 10.34rem;
   position: absolute;
   top: 0rem;
   right: 0rem;
 }
-.section3 .sectContent .contentText .textList .listbott .lightdot {
+.section4 .sectContent .contentText .textList .listbott .lightdot {
   display: block;
   width: 0.74879227rem;
   height: 0.79710145rem;
@@ -740,34 +888,34 @@ img {
   animation: shareopacity 1s ease infinite;
   background: url(../images/lightdot.png) no-repeat center center / contain;
 }
-.section3 .activeThree .listtop .listLeft {
+.section4 .activeFour .listtop .listLeft {
   -webkit-animation: textopacity .5s ease;
   animation: textopacity .5s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section3 .activeThree .listtop .listright {
+.section4 .activeFour .listtop .listright {
   -webkit-animation: sceneshow .5s .5s ease;
   animation: sceneshow .5s .5s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section3 .activeThree .listbott .listLeft {
+.section4 .activeFour .listbott .listLeft {
   -webkit-animation: textopacity .5s 1s ease;
   animation: textopacity .5s 1s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section3 .activeThree .listbott .listright {
+.section4 .activeFour .listbott .listright {
   -webkit-animation: sceneshow .5s 1.5s ease;
   animation: sceneshow .5s 1.5s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section4 {
+.section5 {
   background: url(../images/BCEIAbgtwo.jpg) no-repeat center center / 100% 100%;
 }
-.section4 .sectContent {
+.section5 .sectContent {
   width: 18.57487923rem;
   height: 24.5410628rem;
   position: absolute;
@@ -777,14 +925,14 @@ img {
   margin: auto;
   background: url(../images/section4content.png) no-repeat center center / contain;
 }
-.section4 .sectContent .contentText {
+.section5 .sectContent .contentText {
   width: 15.31400966rem;
   height: 18.93719807rem;
   position: absolute;
   top: 0.24154589rem;
   left: 1.78743961rem;
 }
-.section4 .sectContent .contentText > h2 {
+.section5 .sectContent .contentText > h2 {
   color: #fff;
   height: 1.44927536rem;
   line-height: 1.44927536rem;
@@ -792,20 +940,20 @@ img {
   font-size: 0.96618357rem;
   padding-left: 0.96618357rem;
 }
-.section4 .sectContent .contentText .textList {
+.section5 .sectContent .contentText .textList {
   width: 14.05797101rem;
   position: absolute;
   top: 3.8647343rem;
   left: 1.01449275rem;
 }
-.section4 .sectContent .contentText .textList li {
+.section5 .sectContent .contentText .textList li {
   width: 100%;
   height: 6.73913043rem;
   position: relative;
   opacity: 0;
   background: url(../images/section5libg.png) no-repeat center center / contain;
 }
-.section4 .sectContent .contentText .textList li .listlogo {
+.section5 .sectContent .contentText .textList li .listlogo {
   display: block;
   width: 2.60869565rem;
   height: 2.60869565rem;
@@ -813,7 +961,7 @@ img {
   top: 0.96618357rem;
   left: 0.72463768rem;
 }
-.section4 .sectContent .contentText .textList li .listlogo > img {
+.section5 .sectContent .contentText .textList li .listlogo > img {
   position: absolute;
   top: 0rem;
   right: 0rem;
@@ -821,7 +969,7 @@ img {
   left: 0rem;
   margin: auto;
 }
-.section4 .sectContent .contentText .textList li .listright {
+.section5 .sectContent .contentText .textList li .listright {
   width: 9.66183575rem;
   padding-top: 0.82125604rem;
   position: absolute;
@@ -829,60 +977,60 @@ img {
   left: 3.71980676rem;
   color: #fff;
 }
-.section4 .sectContent .contentText .textList li .listright h3,
-.section4 .sectContent .contentText .textList li .listright h4 {
+.section5 .sectContent .contentText .textList li .listright h3,
+.section5 .sectContent .contentText .textList li .listright h4 {
   font-size: 0.82125604rem;
   margin-bottom: 0.12077295rem;
 }
-.section4 .sectContent .contentText .textList li .listright p {
+.section5 .sectContent .contentText .textList li .listright p {
   font-size: 0.77294686rem;
 }
-.section4 .sectContent .contentText .textList .listtop {
+.section5 .sectContent .contentText .textList .listtop {
   margin-bottom: 0.48309179rem;
 }
-.section4 .sectContent .section4light {
+.section5 .sectContent .section4light {
   display: block;
   width: 7.68115942rem;
   height: 3.30917874rem;
   opacity: 0;
   position: absolute;
 }
-.section4 .sectContent .light4top {
+.section5 .sectContent .light4top {
   top: 9.42028986rem;
   left: 0rem;
   -webkit-transform-origin: left;
   transform-origin: left;
   background: url(../images/section4leftlight.png) no-repeat center center / contain;
 }
-.section4 .sectContent .light4bott {
+.section5 .sectContent .light4bott {
   top: 2.41545894rem;
   right: 0.04830918rem;
   -webkit-transform-origin: right;
   transform-origin: right;
   background: url(../images/section4rightlight.png) no-repeat center center / contain;
 }
-.section4 .activeFour .section4light {
+.section5 .activeFive .section4light {
   -webkit-animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
   animation: lightshow .2s .8s ease,lightact .1s 1.2s ease infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section4 .activeFour .textList .listtop {
+.section5 .activeFive .textList .listtop {
   -webkit-animation: sceneshow .5s .3s ease;
   animation: sceneshow .5s .3s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section4 .activeFour .textList .listbott {
+.section5 .activeFive .textList .listbott {
   -webkit-animation: sceneshow .5s .6s ease;
   animation: sceneshow .5s .6s ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.section5 {
+.section6 {
   background: url(../images/BCEIAbgtwo.jpg) no-repeat center center / 100% 100%;
 }
-.section5 .sectContent {
+.section6 .sectContent {
   width: 16.30434783rem;
   height: 24.5410628rem;
   position: absolute;
@@ -892,27 +1040,31 @@ img {
   margin: auto;
   background: url(../images/section5content.png) no-repeat center center / contain;
 }
-.section5 .sectContent .contentText {
+.section6 .sectContent .contentText {
   width: 15.31400966rem;
   height: 19.00966184rem;
   position: absolute;
   left: 0.72463768rem;
   top: 0.19323671rem;
   box-sizing: border-box;
-  padding-top: 0.84541063rem;
+  padding-top: 1.44927536rem;
 }
-.section5 .sectContent .contentText h2,
-.section5 .sectContent .contentText h3 {
-  font-size: 0.96618357rem;
+.section6 .sectContent .contentText h2,
+.section6 .sectContent .contentText h3 {
   height: 0.96618357rem;
   margin-bottom: 0.36231884rem;
   line-height: 0.96618357rem;
   color: #fff;
   text-align: center;
-  letter-spacing: 0.4rem;
   opacity: 0;
 }
-.section5 .sectContent .contentText .textBtn {
+.section6 .sectContent .contentText h2 {
+  font-size: 0.96618357rem;
+}
+.section6 .sectContent .contentText h3 {
+  font-size: 0.77294686rem;
+}
+.section6 .sectContent .contentText .textBtn {
   width: 8.06763285rem;
   height: 2.41545894rem;
   line-height: 2.41545894rem;
@@ -923,7 +1075,7 @@ img {
   opacity: 0;
   background: url(../images/section5btnbg.png) no-repeat center center / contain;
 }
-.section5 .sectContent .contentText .textCode {
+.section6 .sectContent .contentText .textCode {
   width: 6.90821256rem;
   height: 6.57004831rem;
   margin: 0 auto;
@@ -931,7 +1083,7 @@ img {
   opacity: 0;
   background: url(../images/section5codebg.png) no-repeat center center / contain;
 }
-.section5 .sectContent .contentText .textCode .codeImg {
+.section6 .sectContent .contentText .textCode .codeImg {
   width: 5.07246377rem;
   height: 5.07246377rem;
   position: absolute;
@@ -943,7 +1095,7 @@ img {
   opacity: 0;
   background: #030c14;
 }
-.section5 .sectContent .contentText .textCode .codeImg img {
+.section6 .sectContent .contentText .textCode .codeImg img {
   width: 4.46859903rem;
   position: absolute;
   top: 0rem;
@@ -952,7 +1104,7 @@ img {
   left: 0rem;
   margin: auto;
 }
-.section5 .sectContent .contentText .textCode .headbg {
+.section6 .sectContent .contentText .textCode .headbg {
   width: 3.14009662rem;
   height: 2.41545894rem;
   position: absolute;
@@ -961,19 +1113,19 @@ img {
   right: 0rem;
   margin: auto;
 }
-.section5 .sectContent .contentText .textCode .headbg .headimg {
+.section6 .sectContent .contentText .textCode .headbg .headimg {
   display: block;
   width: 0.72463768rem;
   height: 1.25603865rem;
   margin: 0 auto;
   background: url(../images/section5headbg.png) no-repeat center center / contain;
 }
-.section5 .sectContent .contentText .textCode .headbg p {
+.section6 .sectContent .contentText .textCode .headbg p {
   text-align: center;
   font-size: 0.77294686rem;
   color: #fff;
 }
-.section5 .shareBtn {
+.section6 .shareBtn {
   display: block;
   width: 5.96618357rem;
   height: 1.57004831rem;
@@ -990,17 +1142,51 @@ img {
   animation: shareopacity 3s ease infinite;
   background: url(../images/sharebtn.png) no-repeat center center / contain;
 }
-.section5 .shareBg {
+.section6 .activeSix {
+  -webkit-animation: section5z .1s .8s ease 2;
+  animation: section5z .1s .8s ease 2;
+}
+.section6 .activeSix .contentText h2 {
+  -webkit-animation: leftflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
+  animation: leftflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section6 .activeSix .contentText h3 {
+  -webkit-animation: rightflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
+  animation: rightflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section6 .activeSix .textCode {
+  -webkit-animation: scalebig .1s .8s ease;
+  animation: scalebig .1s .8s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section6 .activeSix .textBtn {
+  -webkit-animation: scalebig .1s .5s ease;
+  animation: scalebig .1s .5s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.section6 .activeSix .codeImg {
+  -webkit-animation: sceneshow .5s 1.5s ease;
+  animation: sceneshow .5s 1.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.shareBg {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0rem;
   left: 0rem;
-  z-index: 9999;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.8);
   display: none;
 }
-.section5 .shareBg .sharelight {
+.shareBg .sharelight {
   width: 2.9468599rem;
   position: absolute;
   top: 0rem;
@@ -1010,7 +1196,7 @@ img {
   -webkit-animation: sharelight .1s ease infinite;
   animation: sharelight .1s ease infinite;
 }
-.section5 .shareBg .sharetext {
+.shareBg .sharetext {
   width: 100%;
   width: 7.24637681rem;
   position: absolute;
@@ -1019,40 +1205,6 @@ img {
   font-size: 0.86956522rem;
   color: #fff;
   text-align: right;
-}
-.section5 .activeFive {
-  -webkit-animation: section5z .1s .8s ease 2;
-  animation: section5z .1s .8s ease 2;
-}
-.section5 .activeFive .contentText h2 {
-  -webkit-animation: leftflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
-  animation: leftflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.section5 .activeFive .contentText h3 {
-  -webkit-animation: rightflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
-  animation: rightflw 0.2s 0.1s cubic-bezier(0.32, -0.44, 0.74, 1.94);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.section5 .activeFive .textCode {
-  -webkit-animation: scalebig .1s .8s ease;
-  animation: scalebig .1s .8s ease;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.section5 .activeFive .textBtn {
-  -webkit-animation: scalebig .1s .5s ease;
-  animation: scalebig .1s .5s ease;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.section5 .activeFive .codeImg {
-  -webkit-animation: sceneshow .5s 1.5s ease;
-  animation: sceneshow .5s 1.5s ease;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
 }
 @-webkit-keyframes opacity {
   from {
@@ -1413,10 +1565,10 @@ img {
     -webkit-transform: translate3d(0, 0, 0);
   }
   25% {
-    -webkit-transform: translate3d(1px, 1px, 1px);
+    -webkit-transform: translate3d(0.05rem, 0.05rem, 0);
   }
   75% {
-    -webkit-transform: translate3d(-1px, -1px, -1px);
+    -webkit-transform: translate3d(-0.05rem, -0.05rem, 0);
   }
 }
 @keyframes section5z {
@@ -1426,10 +1578,10 @@ img {
     transform: translate3d(0, 0, 0);
   }
   25% {
-    transform: translate3d(1px, 1px, 1px);
+    transform: translate3d(0.05rem, 0.05rem, 0);
   }
   75% {
-    transform: translate3d(-1px, -1px, -1px);
+    transform: translate3d(-0.05rem, -0.05rem, 0);
   }
 }
 @-webkit-keyframes shareopacity {
@@ -1758,5 +1910,41 @@ img {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+@-webkit-keyframes figertop {
+  0% {
+    -webkit-transform: translate3d(-10rem, 7rem, 0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 7rem, 0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes figertop {
+  0% {
+    transform: translate3d(-10rem, 7rem, 0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 7rem, 0) scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes figerup {
+  0% {
+    -webkit-transform: translate3d(0, 7rem, 0) scale(0.9, 1.2);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes figerup {
+  0% {
+    transform: translate3d(0, 7rem, 0) scale(0.9, 1.2);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
