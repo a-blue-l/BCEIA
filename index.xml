@@ -8,20 +8,20 @@
 		ondown="copy(oldmousex,mouse.x);domouserotate();"
 	/>
 	<layer name="gallerynext" url="3dimg/gallerybtns.png" keep="true" 
-		align="right" x="0" y="0" zorder="50"
-		crop="50|0|50|50"
-		onovercrop="50|50|50|50"
-		ondowncrop="50|50|50|50"
+		align="right" x="-10" y="0" zorder="50"
+		crop="75|0|75|75"
+		onovercrop="75|75|75|75"
+		ondowncrop="75|75|75|75"
 		ondown="set(y,1);dorotate();"
 		onup="set(y,0)"
 		direction="-1"
 	/>
 	
 	<layer name="galleryprev" url="3dimg/gallerybtns.png" keep="true" 
-		align="left" x="0" y="0" zorder="50"
-		crop="0|0|50|50"
-		onovercrop="0|50|50|50"
-		ondowncrop="0|50|50|50"
+		align="left" x="-10" y="0" zorder="50"
+		crop="0|0|75|75"
+		onovercrop="0|75|75|75"
+		ondowncrop="0|75|75|75"
 		ondown="set(y,1);dorotate();"
 		onup="set(y,0)"
 		direction="1"
@@ -54,7 +54,7 @@
 	<!-- 自适应 -->
 	<action name="updateframesize">
 		if(plugin[%1].imagewidth GT stagewidth,
-			set(plugin[%1].width,80%);
+			set(plugin[%1].width,70%);
 			set(plugin[%1].height,prop);
 		,
 			if(plugin[%1].imageheight GT stageheight,
